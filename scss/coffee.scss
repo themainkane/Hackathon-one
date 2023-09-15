@@ -13,26 +13,29 @@ h2,
 h3,
 p {
   margin: 0;
-  // font-family: sans-serif;
-  // font-weight: 200;
 }
+
+$font: 'Roboto Condensed';
+$font_weight: 200;
 
 @mixin flex-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  // align-items: center;
 }
 
 @mixin flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .container {
   min-height: 100vh;
   margin: 2%;
+  font-family: $font;
+  font-weight: $font_weight;
   @include flex-column;
   h1,
   h2,
@@ -42,10 +45,12 @@ p {
   }
   .header-text {
     @include flex-column;
-    width: 100%;
-    padding: 5%;
+    padding: 2% 2% 0 2%;
     h1 {
       font-size: 3rem;
+    }
+    a {
+      color: rgb(83, 202, 223);
     }
   }
   .coffee-cards {
@@ -55,7 +60,6 @@ p {
       @include flex-column;
       height: 30%;
       background-color: rgb(243, 242, 242);
-      margin: 3%;
       h2 {
         width: 100%;
         border-bottom: 1px solid darkgray;
@@ -69,16 +73,19 @@ p {
       }
     }
   }
-  // @media (max-width: $small-screen) {
-  //   .header {
-  //     padding: 15%;
-  //   }
-  //   .cards {
-  //     @include flex-column;
-  //     .card {
-  //       width: 90%;
-  //       border: none;
-  //     }
-  //   }
-  // }
+  @media (min-width: 650px) {
+    .header-text {
+      padding: 0 10% 0 10%;
+    }
+    .coffee-cards {
+      @include flex-row;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0 10% 5% 10%;
+      .card {
+        width: 47%;
+        margin: 1.5%;
+      }
+    }
+  }
 }

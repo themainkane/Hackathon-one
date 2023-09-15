@@ -1,0 +1,28 @@
+// variable declarations
+
+$breakpoint: 650px;
+
+$font: 'Roboto Condensed';
+$font_weight: 200;
+
+// font colors
+
+// background colors
+$background_charcoal: rgb(81, 80, 80);
+$background_lightgray: rgb(243, 242, 242);
+
+// mixin declarations
+
+@mixin center-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
