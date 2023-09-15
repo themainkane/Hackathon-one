@@ -1,9 +1,8 @@
 // Imports
-@import "_variables.scss";
-@import "home.scss";
-
-
-@import './menu.scss';
+@import "variables";
+@import "_home";
+@import "_coffee";
+@import "_menu";
 
 *,
 *::after,

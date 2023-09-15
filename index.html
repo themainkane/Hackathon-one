@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./scss/home.scss" />
+    <link rel="stylesheet" href="./scss/index.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <div class="all">
@@ -13,12 +16,13 @@
           <div class="header__nav-img">
             <img src="logo.svg" alt="shop logo" />
           </div>
-          <div class="header__nav-items"></div>
-          <!-- include correct links to html files -->
-          <p><a href="#home">Home</a></p>
-          <p><a href="./menu.html">Menu</a></p>
-          <p><a href="#coffee">Coffee</a></p>
-          <p><a href="#ourstory">Our Story</a></p>
+          <div class="header__nav-items">
+            <!-- include correct links to html files -->
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./menu.html">Menu</a></p>
+            <p><a href="./coffee.html">Coffee</a></p>
+            <p><a href="#ourstory">Our Story</a></p>
+          </div>
         </div>
       </header>
 
@@ -47,20 +51,22 @@
           </div>
         </div>
         <!-- embed the map -->
+        <iframe class="main__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.547813011079!2d-122.42347670000001!3d37.777199700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580989a43e76d%3A0x45f1b189ee3b07b3!2s321%20Ivy%20St%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2suk!4v1694785359595!5m2!1sen!2suk"
+          width="600" height="450" style="border:0;" allowfullscreen
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!-- end of main -->
       </div>
-      <footer>
+      <footer class="footer">
         <div class="footer__nav">
-          <div class="footer__nav-items">
-            <!-- include correct links to html files -->
-            <p><a href="#home">Home</a></p>
-            <p><a href="#menu">Menu</a></p>
-            <p><a href="#coffee">Coffee</a></p>
-            <p><a href="#ourstory">Our Story</a></p>
-          </div>
+          <!-- include correct links to html files -->
+          <p><a href="#home">Home</a></p>
+          <p><a href="#menu">Menu</a></p>
+          <p><a href="#coffee">Coffee</a></p>
+          <p><a href="#ourstory">Our Story</a></p>
         </div>
         <div class="footer__nav-social">
-          <h5 class="hashtah">#HIPSTERSMAKECOFEE</h5>
+          <h5>#HIPSTERSMAKECOFEE</h5>
           <p>
             Follow us on <a href>twitter</a> and <a href>instagram</a>
           </p>
