@@ -13,8 +13,10 @@ h2,
 h3,
 p {
   margin: 0;
-  // font-family: Roboto Condensed;
 }
+
+$font: 'Roboto Condensed';
+$font_weight: 200;
 
 @mixin flex-column {
   display: flex;
@@ -32,6 +34,8 @@ p {
 .container {
   min-height: 100vh;
   margin: 2%;
+  font-family: $font;
+  font-weight: $font_weight;
   @include flex-column;
   h1,
   h2,
@@ -79,8 +83,8 @@ p {
       margin: 0;
       padding: 0 10% 5% 10%;
       .card {
-        width: 45%;
-        margin: 1%;
+        width: 47%;
+        margin: 1.5%;
       }
     }
   }
