@@ -9,9 +9,16 @@
   .section__menu-content {
     width: 80%;
     margin: auto;
+
     h1 {
       margin-bottom: 30px;
       text-transform: uppercase;
+      font-weight: 100;
+    }
+    .section__menu-content-title {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-weight: 100;
     }
     .row {
       .column {
@@ -19,6 +26,7 @@
         h2 {
           text-transform: uppercase;
           margin-bottom: 20px;
+          font-weight: 100;
         }
         .menu__list {
           .menu__list-item {
