@@ -1,13 +1,15 @@
 // variable declarations
 
+$breakpoint: 650px;
+
 $font: 'Roboto Condensed';
 $font_weight: 200;
 
-// charcoal:
-$primary_color: rgb(81, 80, 80);
-// light gray:
-$secondary_color: rgb(243, 242, 242);
-// $tertiarty_color: white;
+// font colors
+
+// background colors
+$background_charcoal: rgb(81, 80, 80);
+$background_lightgray: rgb(243, 242, 242);
 
 // mixin declarations
 
